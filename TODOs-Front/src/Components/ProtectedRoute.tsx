@@ -13,7 +13,7 @@ export default function ProtectedRoute({ children }: { children: React.ReactNode
   const { isSuccess, isPending, isError } = useQuery({
     queryKey: ["auth"],
     queryFn: async () => {
-      const res = await axios.get("http://localhost:3000/auth/me", {
+      const res = await axios.get("https://todo-vault-api.onrender.com/auth/me", {
         headers: { "Content-Type": "application/json" },
         withCredentials: true
       });

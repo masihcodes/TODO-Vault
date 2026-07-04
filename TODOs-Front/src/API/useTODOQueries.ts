@@ -6,8 +6,7 @@ import { setAddModalStatus, setDeleteModalStatus, setEditModalStatus } from "../
 
 
 
-const url = "http://localhost:3000/todos/"
-// const url = "https://69cce1f8ddc3cabb7bd1af7a.mockapi.io/test"
+const url = "https://todo-vault-api.onrender.com/todos/"
 
 export function useGetAllTasks(sort: string) {
   return useSuspenseQuery({

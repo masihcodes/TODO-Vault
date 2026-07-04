@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom"
 
 
 
-const url = "http://localhost:3000/auth/"
+const url = "https://todo-vault-api.onrender.com/auth/"
 
 
 export function useRegister() {
