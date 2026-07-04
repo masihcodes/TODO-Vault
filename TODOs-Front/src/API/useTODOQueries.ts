@@ -6,7 +6,10 @@ import { setAddModalStatus, setDeleteModalStatus, setEditModalStatus } from "../
 
 
 
-const url = "https://todo-vault-api.onrender.com/todos/"
+// const url = "https://todo-vault-api.onrender.com/todos/"
+const url = "/api/todos/";
+
+
 
 export function useGetAllTasks(sort: string) {
   return useSuspenseQuery({
