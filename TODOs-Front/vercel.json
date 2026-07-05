@@ -1,8 +1,12 @@
 {
   "rewrites": [
     {
-      "source": "/api/:path*",
-      "destination": "https://todo-vault-api.onrender.com/:path*"
+      "source": "/api/(.*)",
+      "destination": "https://todo-vault-api.onrender.com/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }

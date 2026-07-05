@@ -76,7 +76,18 @@ export default function ToDo() {
               </tr>
             </thead>
 
-            {data.map(todo => (<ToDoRows key={todo.id} todo={todo} />))}
+
+            {Array.isArray(data) ? (
+              data.map(todo => <ToDoRows key={todo.id} todo={todo} />)
+            ) : (
+              <tr>
+                <td colSpan={4} className="p-5 text-center text-amber-400 font-bold">
+                  ⚠️ Error - Not Array
+                </td>
+              </tr>
+            )}
+
+            {/* {data.map(todo => (<ToDoRows key={todo.id} todo={todo} />))} */}
 
           </table>
         </div>
